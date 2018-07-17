@@ -1,0 +1,21 @@
+@mixin button($background-value, $color-value) {
+  //width:20%;
+  background-color: $background-value;
+  color: $color-value;
+  border-radius: 5px;
+  padding: $spacer-s $spacer-m;
+  text-align: center;
+  display: inline-block;
+}
+
+@mixin ghostbutton($background-value, $border-value, $color-value) {
+  //width:20%;
+  background-color: $background-value;
+  border-color: $border-value;
+  border-style: solid;
+  color: $color-value;
+  border-radius: 5px;
+  border-width:2px;
+  padding: $spacer-s;
+  display: inline-block;
+}

@@ -1,0 +1,151 @@
+// Base Layout Stylesheet
+// This is where your layout of the project will go
+// ========================================
+body {
+  background-color: $offwhite;
+  font-family: 'nunito';
+  color: $darkgreen;
+
+}
+
+.header {
+
+  &__figure--logo {
+    width: 275px;
+    margin: auto;
+    margin-top: 15px;
+
+    @include media($medium){
+      width: 350px;
+      padding-left: $spacer-m;
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+    @include media($medium){
+      margin-left: 100px;
+    }
+
+  }
+
+      &__navigation--link {
+          display: inline;
+          padding-right: 8px;
+        }
+}
+
+.main {
+  padding: $spacer-m;
+  display: flex;
+  position: relative;
+
+  &__section {
+    margin: $spacer-lg $reset-0;
+    margin: auto;
+
+
+    &--index {
+
+      h1 {
+        text-align: center;
+        padding: $spacer-m;
+        border-radius: 10px;
+        padding-top: 20px;
+
+      }
+
+      p {
+        border-radius: 10px;
+        padding: $spacer-lg;
+        margin-top: 21px;
+        width: 245px;
+
+        @include media($medium) {
+         width: 440px;
+          justify-content: center;
+          font-size: 1.6rem;
+      }
+
+        @include media($large) {
+         width: 550px;
+          justify-content: center;
+
+        }
+      }
+}
+
+    &--typography {
+      border-radius: 10px;
+      padding: $spacer-s;
+    }
+
+    &--components  {
+
+      h3, h5 {
+        margin: $spacer-s;
+      }
+
+      @include media($medium) {
+        margin: auto;
+      }
+
+    }
+
+    &--elements {
+      h3, h5 {
+        margin: $spacer-s;
+
+    }
+
+    @include media($medium) {
+      justify-content: center;
+      margin: auto;
+}
+
+  }
+}
+}
+
+.item-container {
+    margin: $spacer-m $reset-0;
+
+}
+
+.footer {
+  background-color: $darkgreen;
+
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    background-color: $pink;
+    margin-top: 100px;
+    padding: 10px;
+
+}
+
+      &__navigation--link {
+        display: inline;
+        padding-right: $spacer-m;
+
+  }
+        &__navigation--link :hover{
+          color: $offwhite;
+        }
+
+}
+
+.flex-container {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  justify-content: space-around;
+
+  @include media($medium) {
+    max-width: 450px;
+}
+}

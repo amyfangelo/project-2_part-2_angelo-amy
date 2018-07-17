@@ -1,0 +1,49 @@
+// Form Elements Stylesheet
+// ========================================
+
+
+// Label Styling -- Delete this if you are not using a label
+label {
+  font-size: 1rem;
+  color: $darkgreen;
+  padding:$spacer-s;
+
+  @include media($large){
+  font-size: 1.2rem;
+
+  }
+
+}
+
+// Basic Form Input Styling
+.form--element input {
+  border: 1px, solid;
+  background: transparent;
+  border-color: $pink;
+  border-radius: 10px;
+  border-style: solid;
+  padding: .5rem;
+
+
+
+  @include media($large) {
+  width: 30%;
+  height: 15px;
+
+  }
+}
+
+// Select Form Input Styling
+.form--element select {
+background-color: transparent;
+border-color: $darkgreen;
+color: $darkgreen;
+
+
+
+@include media($large){
+width: 25%;
+height: 30px;
+}
+
+}

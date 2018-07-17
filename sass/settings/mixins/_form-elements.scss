@@ -1,0 +1,8 @@
+@mixin form($background-value, $color-value) {
+  width:60%;
+  background-color: $background-value;
+  color: $color-value;
+  border-radius: 5px;
+  padding: $spacer-s;
+
+}

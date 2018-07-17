@@ -1,0 +1,61 @@
+// Base Typography Stylesheet
+// This is where your base typography will go
+// ========================================
+h1, h2, h3, h4, h5, h6, a {
+  color: $darkgreen;
+  font-family: 'lora';
+
+}
+h1 {
+  font-size: 2.9rem;
+
+
+}
+
+h2 {
+  font-size: 2rem;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+
+}
+
+h4 {
+  font-size: 1.3rem;
+
+}
+
+h5 {
+  font-size: 1rem;
+
+}
+
+h6 {
+  font-size: .80rem;
+
+}
+
+p {
+  font-size: 1.1rem;
+
+
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+
+  @include media($medium){
+    font-size: 1.3rem;
+
+  }
+
+
+
+  &:hover {
+    color: $pink;
+
+  }
+}

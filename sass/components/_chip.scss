@@ -1,0 +1,36 @@
+// Chip Component Stylesheet
+// ========================================
+
+.chip {
+  display: flex;
+  align-items: center;
+  background-color: $avatargrey;
+  max-width:190px;
+  padding:$spacer-s;
+  border-radius:22px;
+
+
+    &__avatar {
+      width: 50px;
+      height: 50px;
+      background-color: $brown;
+      color: $offwhite;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 8%;
+    }
+
+    &__text-container {
+      display: inline-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    &__text--description {
+      font-family:'lora';
+      font-size:.7rem;
+    }
+
+}
