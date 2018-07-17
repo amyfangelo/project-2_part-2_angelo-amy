@@ -1,7 +1,7 @@
 # Project 2 - Vintage Star
 
 #### Link to repository
-[github link here](www.thisisyourgithublink.com)
+[github link here](https://github.com/amyfangelo/project-2_part-2_angelo-amy)
 
 #### Link to website
 [Website Link](http://amyfangelo.com/amyfrancesangelo/project-1_part-2_angelo-amy/index.html)
