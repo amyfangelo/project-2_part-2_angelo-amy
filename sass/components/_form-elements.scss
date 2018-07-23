@@ -16,6 +16,15 @@ label {
 }
 
 // Basic Form Input Styling
+.form--element textarea {
+  border: 1px, solid;
+  background: transparent;
+  border-color: $pink;
+  border-radius: 10px;
+  border-style: solid;
+  padding: .5rem;
+
+}
 .form--element input {
   border: 1px, solid;
   background: transparent;
