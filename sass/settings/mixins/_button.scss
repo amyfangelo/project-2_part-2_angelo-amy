@@ -15,7 +15,7 @@
   border-style: solid;
   color: $color-value;
   border-radius: 5px;
-  border-width:2px;
-  padding: $spacer-s;
+  border-width:.5px;
+  padding: $spacer-s $spacer-m;
   display: inline-block;
 }

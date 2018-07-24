@@ -5,55 +5,61 @@ body {
   background-color: $offwhite;
   font-family: 'nunito';
   color: $darkgreen;
-
 }
 
 .header {
+  height: 27vh;
 
   &__figure--logo {
-    width: 250px;
+    width: 280px;
     margin: auto;
-    margin-top: 15px;
+    margin-top: $spacer-lg;
+    margin-bottom: $spacer-s;
 
-    @include media($medium){
+    @include media($medium) {
       width: 350px;
       padding-left: $spacer-m;
     }
   }
-
   &__navigation {
     display: flex;
     justify-content: flex-end;
-    background-color: $lightgreen;
-    padding: 20px;
+    padding: $spacer-m;
     overflow: hidden;
-    background-color: #333;
     position: fixed;
+    background-color: $lightgreen;
     bottom: 0;
     width: 100%;
-
-    @include media($medium){
-      margin-left: 100px;
-    }
-
   }
-
       &__navigation--link {
           display: inline;
-          padding-right: 8px;
+          padding: $spacer-m;
+          margin-right: $spacer-m;
         }
+
+        &__navigation--link a:hover {
+            padding: $spacer-xs $spacer-xs $spacer-xs $spacer-xs;
+            background-color: $darkgreen;
+             transition-duration: 1s;
+          }
+
+        &--buttons {
+          float: right;
+          padding-right: $spacer-m;
+          }
 }
 
 .main {
   padding: $spacer-m;
-  display: flex;
   position: relative;
   background-color:$pink;
+  height: 65vh;
+  display: grid;
 
 
-  &__figure--image{
+  &__figure--image {
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
   }
 
   &__section {
@@ -61,81 +67,77 @@ body {
     margin: auto;
 
     p {
-      margin-top: $spacer-m;
+      margin: $spacer-s;
       width: 290px;
-
-      @include media($medium) {
-       width: 440px;
-        justify-content: center;
-        font-size: 1.6rem;
     }
 
-        @include media($large) {
-         width: 550px;
-          justify-content: center;
-
-        }
-      }
-}
-
-    &--typography {
-      border-radius: 10px;
-      padding: $spacer-s;
+    &--button {
+      justify-self: center;
     }
 
-    &--components  {
-
-      h3, h5 {
-        margin: $spacer-s;
-      }
-
-      @include media($medium) {
-        margin: auto;
-      }
-
-    }
-
-    &--elements {
-      h3, h5 {
-        margin: $spacer-s;
-
-    }
-
-    @include media($medium) {
-      justify-content: center;
-      margin: auto;
-}
 
   }
+}
+.section__about {
+  height:60vh;
+  margin: $spacer-lg $reset-0;
+  display: grid;
+  padding: $spacer-lg;
 
+  .border-bottom {
+    border-bottom: 1.5px solid $pink;
+    width: $spacer-xxxl;
+    text-align: center;
+    padding-bottom: $spacer-xs;
+  }
+  h3 {
+    width:100%;
+    margin: auto;
+  }
+
+  &--button {
+    margin: auto;
+  }
+
+
+}
+
+.section__contact {
+  height: 50vh;
+  display: grid;
+  text-align: center;
+  padding: $spacer-lg;
 }
 
 .item-container {
     margin: $spacer-m $reset-0;
-
 }
 
 .footer {
   background-color: $pink;
+  padding: $spacer-xxl 0;
+  text-align:center;
 
-  &__navigation {
-    display: flex;
-    justify-content: center;
-    margin-left: 50px;
-    background-color: $pink;
-    margin-top: 100px;
-    padding: 10px;
+    &__figure--pinkicon {
+      width: $spacer-lg;
+      height:$spacer-lg;
+      border-radius: 50%;
+      border:1px solid $darkgreen;
+      padding: $spacer-xs;
+      margin: $spacer-s;
 
+    }
+    &__figure--greenicon {
+        width: $spacer-lg;
+        height:$spacer-lg;
+        background-color: $darkgreen;
+        border-radius: 50%;
+        padding: $spacer-xs;
+        margin: $spacer-s;
+      }
+h5{
+padding-bottom: $spacer-xs
 }
-
-      &__navigation--link {
-        display: inline;
-        padding-right: $spacer-m;
-
-  }
-        &__navigation--link :hover{
-          color: $offwhite;
-        }
 
 }
 

@@ -5,20 +5,22 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="icon" href="img/vintagestarfavicon.png" type="image/png">
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <nav class= "header__navigation">
         <ul>
-            <li class="header__navigation--link"><a href="">HOME</a></li>
-            <li class="header__navigation--link"><a href="">ABOUT</a></li>
-            <li class="header__navigation--link"><a href="">CONACT</a></li>
+            <li class="header__navigation--link"><a href="#home">HOME</a></li>
+            <li class="header__navigation--link"><a href="#about">ABOUT</a></li>
+            <li class="header__navigation--link"><a href="#contact">CONACT</a></li>
           </ul>
       </nav>
+      <section class="header--buttons">
       <div class="button--secondarygreen">
         <p>LOG IN</p>
       </div>
       <div class="button--primarygreen">
         <p>SIGN UP</p>
       </div>
+    </section>
       <figure class="header__figure--logo">
         <img src="img/vintagestarlogo.png" class="header__figure--logo" alt="Vintage Star" title="Vintage Star"/>
       </figure>
@@ -26,26 +28,35 @@
     <main class="main">
       <section class="main__section">
           <h1>REDEFINING THE ONLINE VINTAGE MARKETPLACE</h1>
-          <p>Connecting a community dedicated to discovering + supporting local vintage shops across the USA</p>
+          <p>Connecting a community dedicated to discovering + supporting local vintage shops across the USA.</p>
            <figure class="main__figure"><img src="img/laptop.png" class="main__figure--image"></figure>
+           <p> Ready to join our network of vintage lovers?</p>
       </section>
+      <section class="main__section--button">
+      <div class="button--primarygreen">
+        <p>SIGN UP</p>
+      </div>
+    </section>
     </main>
-    <section class="section__about">
-      <h3>FIND.</h3>
+    <section class="section__about" id="about">
+      <h1> VINTAGE STAR IS HERE TO HELP YOU</h1>
+      <h3 class="border-bottom">FIND.</h3>
       <p>Your favorite vintage stores. Vintage Star is your go-to vintage store locator.</p>
-      <h3> RATE.</h3>
+      <h3 class="border-bottom"> RATE.</h3>
       <p>Review your favorite local vintage shops + discover other vintage shops in your area or across the USA</p>
-      <h3>SHOP.</h3>
+      <h3 class="border-bottom">SHOP.</h3>
       <p>Our carefully curated, flash-sale online vintage collection</h3>
+        <div class="section__about--button">
         <div class="button--primarypink">
           <p>SIGN UP</p>
         </div>
+      </section>
     </section>
     <article class="article__about--slider">
       <p class="background--lightgreen">SLIDER</p>
     </article>
-    <section class="section__contact">
-      <fieldset>contact us</fieldset>
+    <section class="section__contact" id="contact">
+      <h2>contact us</h2>
       <div class="form--element">
         <label for= name>name</label>
           <input type="text" name="name" id="email" placeholder="name"/>
@@ -83,11 +94,16 @@
       <section class="footer__section--buttons">
     </section>
     <section class="footer__section--information">
+      <figure class="footer__section--icons">
+          <img src="img/vintagestar_facebook.svg" class="footer__figure--greenicon" alt="Vintage Star Facebook" title="Vintage Star Facebook"/>
+          <img src="img/vingagestar_instagram.svg" class="footer__figure--pinkicon" alt="Vintage Star Instagram" title="Vintage Star Instagram"/>
+          <img src="img/vintagestar_contact.svg" class="footer__figure--greenicon" alt="Vintage Star contact" title="Vintage Star contact"/>
+    </figure>
       <h5>561 Broadway, New York City, NY 10012</h5>
-      <h5>(904)451-0451</h5>
       <h6>&copy;2018 Vintage Star
     </section>
        </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
   </body>
 </html>
