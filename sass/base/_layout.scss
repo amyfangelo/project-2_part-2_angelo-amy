@@ -103,7 +103,7 @@ body {
 }
 
 .section__contact {
-  height: 50vh;
+  height: 60vh;
   display: grid;
   text-align: center;
   padding: $spacer-lg;
@@ -115,7 +115,7 @@ body {
 
 .footer {
   background-color: $pink;
-  padding: $spacer-xxl 0;
+  padding: $spacer-lg 0 $spacer-xxxl 0;
   text-align:center;
 
     &__figure--pinkicon {
