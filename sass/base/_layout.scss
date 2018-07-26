@@ -126,7 +126,7 @@ body {
         max-width: 500px;
       }
         @include media($medium) {
-        margin: $spacer-lg;
+        margin: $spacer-m;
         max-width: 600px;
       }
   }
@@ -139,6 +139,7 @@ body {
         width: 333px;
       }
       @include media($medium) {
+        margin: $spacer-m;
         width: 400px;
       }
     }
