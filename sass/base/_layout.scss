@@ -16,6 +16,10 @@ body {
     margin-top: $spacer-lg;
     margin-bottom: $spacer-s;
 
+    @include media($small) {
+      width: 300px;
+    }
+
     @include media($medium) {
       width: 350px;
       padding-left: $spacer-m;
@@ -36,16 +40,19 @@ body {
           padding: $spacer-m;
           margin-right: $spacer-m;
         }
+        @include media($small) {
 
         &__navigation--link a:hover {
-            padding: $spacer-xs $spacer-xs $spacer-xs $spacer-xs;
-            background-color: $darkgreen;
-             transition-duration: 1s;
+            padding: $spacer-xs $spacer-s $spacer-xs $spacer-s;
+            font-size: 1.5rem;
+            border: $pink 1px dotted;
+            transition-duration: 1s;
           }
+        }
 
         &--buttons {
           float: right;
-          padding-right: $spacer-m;
+          padding-right: $spacer-lg;
           }
 }
 
@@ -53,22 +60,60 @@ body {
   padding: $spacer-m;
   position: relative;
   background-color:$pink;
-  height: 65vh;
+  height: 60vh;
   display: grid;
 
+  @include media($small) {
+    height: 65vh;
+  }
+
+  @include media($medium) {
+    height: 80vh;
+  }
+  &__section--button {
+    margin-top: $spacer-lg;
+  }
 
   &__figure--image {
     width: 100%;
     max-width: 400px;
+    margin-top: $spacer-xlg;
+
+    // @include media($small) {
+    //   max-width: 600px;
+    // }
+    // @include media($medium) {
+    //   float: right;
+    //   max-width: 550px;
+    // }
   }
 
   &__section {
-    margin: $spacer-lg $reset-0;
-    margin: auto;
 
+    h1 {
+      max-width: 310px;
+
+      @include media($small) {
+        max-width: 500px;
+      }
+
+    }
     p {
       margin: $spacer-s;
       width: 290px;
+
+      @include media($small) {
+        width: 333px;
+      }
+    }
+
+
+
+    .center {
+      margin: auto;
+      width: 250px;
+      margin-bottom: $spacer-s;
+
     }
 
     &--button {
@@ -93,10 +138,12 @@ body {
   h3 {
     width:100%;
     margin: auto;
+    padding: $spacer-lg 0;
   }
 
   &--button {
     margin: auto;
+    padding: $spacer-lg 0;
   }
 
 
