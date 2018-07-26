@@ -6,9 +6,18 @@ body {
   font-family: 'nunito';
   color: $darkgreen;
 }
+.widthcontainer {
+  width: 100%;
+    @include media($xlarge) {
+      max-width: 1200px;
+    }
+}
 
 .header {
   height: 27vh;
+    @include media($medium) {
+      height: 35vh;
+    }
 
   &__figure--logo {
     width: 280px;
@@ -34,6 +43,18 @@ body {
     background-color: $lightgreen;
     bottom: 0;
     width: 100%;
+
+    @include media($large) {
+        position:relative;
+      	background-color:$lightgreen;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        margin-bottom: $spacer-s;
+
+    }
+
+
   }
       &__navigation--link {
           display: inline;
@@ -41,27 +62,27 @@ body {
           margin-right: $spacer-m;
         }
         @include media($small) {
-
         &__navigation--link a:hover {
             padding: $spacer-xs $spacer-s $spacer-xs $spacer-s;
             font-size: 1.5rem;
             border: $pink 1px dotted;
             transition-duration: 1s;
           }
+
         }
 
         &--buttons {
           float: right;
           padding-right: $spacer-lg;
           }
-}
+
+      }
 
 .main {
   padding: $spacer-m;
   position: relative;
   background-color:$pink;
   height: 60vh;
-  display: grid;
 
   @include media($small) {
     height: 65vh;
@@ -70,18 +91,25 @@ body {
   @include media($medium) {
     height: 80vh;
   }
-  &__section--button {
-    margin-top: $spacer-lg;
-  }
+    &__section--button {
+      margin: $spacer-lg $spacer-s;
+
+      @include media($small) {
+        margin-top: $spacer-xs;
+      }
+    }
 
   &__figure--image {
-    width: 100%;
-    max-width: 400px;
-    margin-top: $spacer-xlg;
+    max-width: 500px;
+    max-width: 100%;
 
-    // @include media($small) {
-    //   max-width: 600px;
-    // }
+    @include media($small) {
+      max-width: 500px;
+    }
+    @include media($medium) {
+      float: right;
+      max-width: 600px;
+    }
     // @include media($medium) {
     //   float: right;
     //   max-width: 550px;
@@ -91,42 +119,35 @@ body {
   &__section {
 
     h1 {
-      max-width: 310px;
+      max-width: 300px;
 
-      @include media($small) {
+
+        @include media($small) {
         max-width: 500px;
       }
-
-    }
+        @include media($medium) {
+        margin: $spacer-lg;
+        max-width: 600px;
+      }
+  }
     p {
-      margin: $spacer-s;
+      margin-top: $spacer-s;
+      margin-bottom: $spacer-lg;
       width: 290px;
 
       @include media($small) {
         width: 333px;
       }
+      @include media($medium) {
+        width: 400px;
+      }
     }
-
-
-
-    .center {
-      margin: auto;
-      width: 250px;
-      margin-bottom: $spacer-s;
-
-    }
-
-    &--button {
-      justify-self: center;
-    }
-
 
   }
 }
 .section__about {
-  height:60vh;
+  height:70vh;
   margin: $spacer-lg $reset-0;
-  display: grid;
   padding: $spacer-lg;
 
   .border-bottom {
@@ -135,18 +156,38 @@ body {
     text-align: center;
     padding-bottom: $spacer-xs;
   }
+  h1 {
+    text-align: center;
+  }
+
   h3 {
     width:100%;
     margin: auto;
     padding: $spacer-lg 0;
+
   }
 
-  &--button {
+
+  .center {
+    padding: $spacer-m 0;
+    text-align: center;
     margin: auto;
-    padding: $spacer-lg 0;
+    width: 100%;
+    max-width: 250px;
+
+    @include media($medium) {
+      max-width: 350px;
+      margin: auto;
+    }
+
   }
 
+    &--button {
+    padding: $spacer-lg 0;
+    text-align: center;
 
+
+  }
 }
 
 .section__contact {

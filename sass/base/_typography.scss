@@ -43,7 +43,9 @@ h6 {
 p {
   font-size: 1.1rem;
 
-
+  @include media($medium) {
+    font-size: 1.5rem;
+  }
 }
 
 a {
