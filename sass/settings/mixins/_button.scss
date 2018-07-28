@@ -6,6 +6,9 @@
   padding: $spacer-s $spacer-m;
   text-align: center;
   display: inline-block;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 @mixin ghostbutton($background-value, $border-value, $color-value) {
@@ -18,4 +21,7 @@
   border-width:.5px;
   padding: $spacer-s $spacer-m;
   display: inline-block;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
 }

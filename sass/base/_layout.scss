@@ -5,18 +5,13 @@ body {
   background-color: $offwhite;
   font-family: 'nunito';
   color: $darkgreen;
-}
-.widthcontainer {
-  width: 100%;
-    @include media($xlarge) {
-      max-width: 1200px;
-    }
+  max-width: 1200px;
+  margin: auto;
 }
 
 .header {
-  height: 27vh;
     @include media($medium) {
-      height: 35vh;
+
     }
 
   &__figure--logo {
@@ -37,11 +32,11 @@ body {
   &__navigation {
     display: flex;
     justify-content: flex-end;
-    padding: $spacer-m;
+    padding: $spacer-m $reset-0;
     overflow: hidden;
     position: fixed;
     background-color: $lightgreen;
-    bottom: 0;
+    bottom: $reset-0;
     width: 100%;
 
     @include media($large) {
@@ -49,47 +44,42 @@ body {
       	background-color:$lightgreen;
         position: -webkit-sticky;
         position: sticky;
-        top: 0;
+        top: $reset-0;
         margin-bottom: $spacer-s;
-
-    }
-
-
+      }
   }
       &__navigation--link {
           display: inline;
           padding: $spacer-m;
           margin-right: $spacer-m;
         }
-        @include media($small) {
-        &__navigation--link a:hover {
+
+        & a:hover {
+          @include media($large) {
             padding: $spacer-xs $spacer-s $spacer-xs $spacer-s;
             font-size: 1.5rem;
             border: $pink 1px dotted;
             transition-duration: 1s;
           }
-
         }
-
         &--buttons {
           float: right;
-          padding-right: $spacer-lg;
+          padding-right: $spacer-xlg;
           }
-
-      }
+        }
 
 .main {
   padding: $spacer-m;
   position: relative;
   background-color:$pink;
-  height: 60vh;
+
 
   @include media($small) {
     height: 65vh;
   }
 
   @include media($medium) {
-    height: 80vh;
+    height: 70vh;
   }
     &__section--button {
       margin: $spacer-lg $spacer-s;
@@ -99,16 +89,28 @@ body {
       }
     }
 
-  &__figure--image {
-    max-width: 500px;
-    max-width: 100%;
+    &__figure--image{
+    max-width: 300px;
 
     @include media($small) {
       max-width: 500px;
     }
+
     @include media($medium) {
       float: right;
       max-width: 600px;
+    }
+
+    @include media($large) {
+      position: absolute;
+      top: 190px;
+      right: $reset-0;
+      max-width: 710px;
+    }
+
+    @include media($xlarge) {
+      top: $spacer-lg;
+      max-width: 810px;
     }
     // @include media($medium) {
     //   float: right;
@@ -120,7 +122,6 @@ body {
 
     h1 {
       max-width: 300px;
-
 
         @include media($small) {
         max-width: 500px;
@@ -143,13 +144,28 @@ body {
         width: 400px;
       }
     }
-
   }
 }
 .section__about {
-  height:70vh;
+
   margin: $spacer-lg $reset-0;
   padding: $spacer-lg;
+
+  @include media($large) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+    &--container {
+        @include media($xlarge) {
+          display: flex;
+          justify-content: center;
+          margin: $spacer-xlg $reset-0;
+
+        }
+
+    }
 
   .border-bottom {
     border-bottom: 1.5px solid $pink;
@@ -168,7 +184,6 @@ body {
 
   }
 
-
   .center {
     padding: $spacer-m 0;
     text-align: center;
@@ -182,20 +197,55 @@ body {
     }
 
   }
-
     &--button {
     padding: $spacer-lg 0;
     text-align: center;
-
-
   }
 }
 
 .section__contact {
-  height: 60vh;
-  display: grid;
-  text-align: center;
-  padding: $spacer-lg;
+
+  &__container {
+    display: grid;
+    grid-template-columns: [first] 5% [two] auto [three] 5% [end];
+    grid-template-rows: [row1-start] 60px [row2] 60px [row3] 60px [row4] 60px [row5] 60px;
+  }
+// .section__contact {
+//   height: 50vh;
+//   display: flex;
+//   flex-direction: column;
+//   text-align: CENTER;
+//   margin-top: $spacer-xxl;
+//   width: 300px;
+//
+//   @include media($medium) {
+//     width: 500px;
+//     margin: auto;
+//   }
+//   @include media($large) {
+//     width: 1000px;
+//     margin: auto;
+//   }
+//   @include media($xlarge) {
+//     width: 1100px;
+//     margin: auto;
+//   }
+
+
+
+  &--form-element{
+    // padding: $spacer-s;
+    // display: block;
+    grid-column-start: two;
+    grid-column-end: three;
+    display: flex;
+    justify-content: center;
+
+    &--actions {
+      margin: $spacer-m $reset-0;
+      text-align: center;
+    }
+  }
 }
 
 .item-container {
@@ -224,7 +274,7 @@ body {
         padding: $spacer-xs;
         margin: $spacer-s;
       }
-h5{
+h5 {
 padding-bottom: $spacer-xs
 }
 
@@ -238,5 +288,5 @@ padding-bottom: $spacer-xs
 
   @include media($medium) {
     max-width: 450px;
-}
+  }
 }

@@ -5,7 +5,7 @@
     <link href="css/main.css" rel="stylesheet">
     <link rel="icon" href="img/vintagestarfavicon.png" type="image/png">
   <body>
-    <div class= "widthcontainer>"
+    <!-- <div class= "widthcontainer"> -->
     <header class="header" id="home">
       <nav class= "header__navigation">
         <ul>
@@ -15,13 +15,25 @@
           </ul>
       </nav>
       <section class="header--buttons">
-      <div class="button--secondarygreen">
-        <p>LOG IN</p>
-      </div>
-      <div class="button--primarygreen">
-        <p>SIGN UP</p>
-      </div>
-    </section>
+        <button class="button--secondarygreen"><p>LOG IN</p></button>
+         <button class="button--primarygreen modal__trigger-btn"><p>SIGN UP</p></button>
+          <!-- <div class="modal" aria-hidden="true">
+          <div class="modal__container">
+            <img src="img/icon-close.svg" alt="close" class="modal__close"/>
+          <header class="modal__header">
+              <img src="img/vintagestarlogo.png" class="header__figure--logo" alt="Vintage Star" title="Vintage Star"/>
+            <h4> Discover America's best vintage stores! </h4>
+            <p>sign up + shop now</p>
+          </header>
+          <form>
+            <input name="email" placeholder="email" class="input"/>
+            <button class="button--secondarypink">Cancel</button>
+            <input type="submit" value="submit" class="button--primarypink"/>
+          </form>
+        </div>
+        </div> -->
+      </section>
+        </main>
       <figure class="header__figure--logo">
         <img src="img/vintagestarlogo.png" class="header__figure--logo" alt="Vintage Star" title="Vintage Star"/>
       </figure>
@@ -36,65 +48,72 @@
             <p>SIGN UP</p>
           </div>
      </section>
-           <figure class="main__figure"><img src="img/laptop.png" class="main__figure--image"></figure>
+        <img src="img/laptop.png" class="main__figure--image"/>
     </section>
     </main>
     <section class="section__about" id="about">
-      <h1> VINTAGE STAR IS HERE TO HELP YOU</h1>
-      <div class="section__about--information">
-      <h3 class="border-bottom">FIND.</h3>
-      <p class="center">Your favorite vintage stores. Vintage Star is your go-to vintage store locator.</p>
-    </div>
-    <div class="section__about--information">
-      <h3 class="border-bottom"class="underline--magical"> RATE.</h3>
-      <p class="center">Review your favorite local vintage shops + discover other vintage shops in your area or across the USA</p>
-    </div>
-    <div class="section__about--information">
-      <h3 class="border-bottom"<span class="underline--magical">SHOP.</span></h3>
-      <p class="center">Our carefully curated, flash-sale online vintage collection</h3>
-        <div class="section__about--button">
-        <div class="button--primarypink">
-          <p>SIGN UP</p>
+      <h1> VINTAGE STAR IS HERE TO HELP YOU:</h1>
+      <div class="section__about--container">
+        <div class="section__about--information">
+          <h3 class="border-bottom">FIND.</h3>
+          <p class="center">Your favorite vintage stores. Vintage Star is your go-to vintage store locator.</p>
         </div>
-      </section>
+        <div class="section__about--information">
+          <h3 class="border-bottom"class="underline--magical"> RATE.</h3>
+          <p class="center">Review your favorite local vintage shops + discover other vintage shops in your area or across the USA</p>
+        </div>
+        <div class="section__about--information">
+          <h3 class="border-bottom"<span class="underline--magical">SHOP.</span></h3>
+          <p class="center">Our carefully curated, flash-sale online vintage collection</h3>
+        </div>
+      </div>
+      <div class="section__about--button">
+        <button class="button--primarypink">
+          <p>SIGN UP</p>
+        </button>
+      </div>
+    </section>
     </section>
     <article class="article__about--slider">
       <p class="background--lightgreen">SLIDER</p>
     </article>
     <section class="section__contact" id="contact">
       <h2>contact us</h2>
-      <div class="form--element">
-        <label for= name>name</label>
-          <input type="text" name="name" id="name" placeholder="name"/>
-      </div>
-      <div class="form--element">
-        <label for= email>email</label>
-          <input type="text" name="email" id="email" placeholder="email"/>
-      </div>
-      <div class="form--element">
-        <label for= mobile>mobile</label>
-          <input type="text" name="cell" id="mobile" placeholder="mobile"/>
-      </div>
-      <div class="form--element">
-        <label for="state">state</label>
-        <select>
-            <option value="FL">Florida</option>
-            <option value="GA">Georiga</option>
-            <option value="CA">California</option>
-            <option value="NY">New York</option>
-          </select>
-      </div>
-      <div class="form--element">
-        <label for= textarea>Message</label>
+      <div class="section__contact__container">
+        <div class="section__contact--form-element">
+          <label for= name>name</label>
+            <input type="text" name="name" id="name" placeholder="name"/>
+        </div>
+        <div class="section__contact--form-element">
+          <label for= email>email</label>
+            <input type="text" name="email" id="email" placeholder="email"/>
+        </div>
+        <div class="section__contact--form-element">
+          <label for= mobile>mobile</label>
+            <input type="text" name="cell" id="mobile" placeholder="mobile"/>
+        </div>
+        <div class="section__contact--form-element">
+          <label for="state">state</label>
+          <select class="section__contact--form-element--select">
+              <option value="FL">Florida</option>
+              <option value="GA">Georiga</option>
+              <option value="CA">California</option>
+              <option value="NY">New York</option>
+            </select>
+        </div>
+        <div class="section__contact--form-element">
+          <label for= textarea>Message</label>
           <textarea>message</textarea>
-          <div class="button--secondarypink">
-            <p>CANCEL</p>
-          </div>
-          <div class="button--primarypink">
-            <p>SUBMIT</p>
-          </div>
+        </div>
       </div>
-
+      <div class="section__contact--form-element--actions">
+        <button class="button--secondarypink">
+          <p>CANCEL</p>
+        </button>
+        <button class="button--primarypink">
+          <p>SUBMIT</p>
+        </button>
+      </div>
     </section>
     <footer class="footer">
       <section class="footer__section--buttons">
@@ -111,6 +130,8 @@
        </footer>
      </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script src="js/smoothscroll.js"></script>
+  <script src="js/modal.js"></script>
   </body>
 </html>
