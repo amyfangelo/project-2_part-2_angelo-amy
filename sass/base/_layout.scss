@@ -75,12 +75,19 @@ body {
 
 
   @include media($small) {
-    height: 65vh;
+    height: 600px;
   }
 
   @include media($medium) {
-    height: 70vh;
+    height: 700px;
   }
+  @include media($large) {
+    height: 650px;
+  }
+  @include media($xlarge) {
+    height: 550px;
+  }
+
     &__section--button {
       margin: $spacer-lg $spacer-s;
 
