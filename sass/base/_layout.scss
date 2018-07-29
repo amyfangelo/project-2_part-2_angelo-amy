@@ -29,6 +29,7 @@ body {
       padding-left: $spacer-m;
     }
   }
+
   &__navigation {
     display: flex;
     justify-content: flex-end;
@@ -40,10 +41,9 @@ body {
     width: 100%;
 
     @include media($large) {
-        position:relative;
+        position:relative sticky;
       	background-color:$lightgreen;
-        position: -webkit-sticky;
-        position: sticky;
+        height: 30px;
         top: $reset-0;
         margin-bottom: $spacer-s;
       }
@@ -65,6 +65,7 @@ body {
         &--buttons {
           float: right;
           padding-right: $spacer-xlg;
+          margin-top: $spacer-lg;
           }
         }
 
@@ -110,7 +111,7 @@ body {
 
     @include media($large) {
       position: absolute;
-      top: 190px;
+      top: $spacer-xxxxl;
       right: $reset-0;
       max-width: 710px;
     }
@@ -211,6 +212,10 @@ body {
 }
 
 .section__contact {
+  h2 {
+    text-align: center;
+    margin: 2%;
+  }
 
   &__container {
     display: grid;
