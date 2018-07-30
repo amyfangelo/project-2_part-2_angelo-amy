@@ -23,6 +23,11 @@
 [Bottom navigation]
 (https://www.w3schools.com/howto/howto_css_bottom_nav.asp)
 `This resource taught me how to do a bottom navigation for optimal mobile accessibility`
+[css grid] (https://css-tricks.com/snippets/css/complete-guide-grid/)
+`This resource showed me how to implement css grid.`
+[flexbox] (https://flexbox.help/)
+`I learned how to properly code flexbox with the help of this resource`
+
 
 #### Deductions
 `I reviewed the list of deductions for this project and in the syllabus.`
