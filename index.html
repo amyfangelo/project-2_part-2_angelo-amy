@@ -14,25 +14,32 @@
             <li class="header__navigation--link"><a href="#contact">CONACT</a></li>
           </ul>
       </nav>
+
       <section class="header--buttons">
-        <button class="button--secondarygreen"><p>LOG IN</p></button>
-         <button class="button--primarygreen modal__trigger-btn"><p>SIGN UP</p></button>
-          <!-- <div class="modal" aria-hidden="true">
+           <div class="modal">
+             <button class="button--primarygreen modal__trigger-btn"><p>SIGN UP</p></button>
+               <div class="modal" aria-hidden="true">
           <div class="modal__container">
             <img src="img/icon-close.svg" alt="close" class="modal__close"/>
           <header class="modal__header">
-              <img src="img/vintagestarlogo.png" class="header__figure--logo" alt="Vintage Star" title="Vintage Star"/>
+              <img src="img/vintagestarlogo.png" class="modal__figure--logo" alt="Vintage Star" title="Vintage Star"/>
             <h4> Discover America's best vintage stores! </h4>
             <p>sign up + shop now</p>
           </header>
           <form>
-            <input name="email" placeholder="email" class="input"/>
+            <div class="modal__form-element">
+              <label for= email>email:</label>
+                <input type="text" name="email" id="email" placeholder="email"/>
+            </div>
             <button class="button--secondarypink">Cancel</button>
             <input type="submit" value="submit" class="button--primarypink"/>
           </form>
         </div>
-        </div> -->
-      </section>
+          <button class="button--secondarygreen"><p>LOG IN</p></button>
+        </div>
+  </section>
+
+
     </header>
       <figure class="header__figure--logo">
         <img src="img/vintagestarlogo.png" class="header__figure--logo" alt="Vintage Star" title="Vintage Star"/>
@@ -96,7 +103,7 @@
           <label for="state">state</label>
           <select class="section__contact--form-element--select">
               <option value="FL">Florida</option>
-              <option value="GA">Georiga</option>
+              <option value="GA">Georgia</option>
               <option value="CA">California</option>
               <option value="NY">New York</option>
             </select>
@@ -129,9 +136,8 @@
     </section>
        </footer>
      </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+   <script src="js/modal.js"></script>
   <script src="js/smoothscroll.js"></script>
-  <script src="js/modal.js"></script>
   </body>
 </html>

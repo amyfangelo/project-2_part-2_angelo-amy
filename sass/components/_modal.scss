@@ -2,15 +2,29 @@
   .position: relative;
   width: 100%;
 
+
   &__container {
-    background-color: $grey;
+    background-color: $offwhite;
+    border: $greengrey $spacer-xs solid;
     padding: $spacer-m;
     display: flex;
     flex-direction: column;
-    visibility: hidden;
-    opacity: 0;
+    border-top: $darkgreen 10px solid;
+    border-bottom: $darkgreen 10px solid;
+    text-align: center;
+    padding: $spacer-lg;
+    // visibility: hidden;
+    // opacity: 0;
+}
+      &__figure--logo {
+        width: 100%;
+        max-width: 220px;
+      }
 
-  }
+      h4 {
+        padding: $spacer-m;
+        color: $brown;
+      }
 
   &__close{
     align-self: flex-end;
