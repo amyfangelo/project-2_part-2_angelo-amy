@@ -10,15 +10,12 @@ body {
 }
 
 .header {
-    @include media($medium) {
 
-    }
 
   &__figure--logo {
-    width: 280px;
-    margin: auto;
-    margin-top: $spacer-lg;
-    margin-bottom: $spacer-s;
+    width: 250px;
+    margin: $spacer-m auto;
+
 
     @include media($small) {
       width: 300px;
@@ -27,6 +24,10 @@ body {
     @include media($medium) {
       width: 350px;
       padding-left: $spacer-m;
+    }
+    @include media($large) {
+      width: 400px;
+        margin: $spacer-xxl auto;
     }
   }
 
@@ -46,6 +47,7 @@ body {
         height: 30px;
         top: $reset-0;
         margin-bottom: $spacer-s;
+        max-width: 1200px;
       }
   }
       &__navigation--link {
@@ -65,8 +67,12 @@ body {
         &--buttons {
           float: right;
           padding-right: $spacer-xlg;
-          margin-top: $spacer-xxl;
+
+          @include media($large) {
+            margin-top: $spacer-m;
           }
+        }
+
         }
 
 .main {
@@ -219,7 +225,7 @@ body {
 
   &__container {
     display: grid;
-    grid-template-columns: [first] 5% [two] auto [three] 5% [end];
+   grid-template-columns: [first] 5% [two] auto [three] 5% [end];
     grid-template-rows: [row1-start] 60px [row2] 60px [row3] 60px [row4] 60px [row5] 60px;
   }
 // .section__contact {
@@ -246,8 +252,6 @@ body {
 
 
   &--form-element{
-    // padding: $spacer-s;
-    // display: block;
     grid-column-start: two;
     grid-column-end: three;
     display: flex;
@@ -277,6 +281,10 @@ body {
       padding: $spacer-xs;
       margin: $spacer-s;
 
+      @include media($large) {
+        width: $spacer-xlg;
+        height:$spacer-xlg;
+      }
     }
     &__figure--greenicon {
         width: $spacer-lg;
@@ -285,6 +293,11 @@ body {
         border-radius: 50%;
         padding: $spacer-xs;
         margin: $spacer-s;
+
+        @include media($large) {
+          width: $spacer-xlg;
+          height:$spacer-xlg;
+        }
       }
 h5 {
 padding-bottom: $spacer-xs
