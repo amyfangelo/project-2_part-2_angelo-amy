@@ -1,5 +1,5 @@
 .modal {
-  .position: relative;
+  // position: relative;
   width: 100%;
 
 
@@ -13,8 +13,8 @@
     border-bottom: $darkgreen 10px solid;
     text-align: center;
     padding: $spacer-lg;
-    // visibility: hidden;
-    // opacity: 0;
+    visibility: hidden;
+    opacity: 0;
 }
       &__figure--logo {
         width: 100%;
@@ -26,7 +26,7 @@
         color: $brown;
       }
 
-  &__close{
+  &__close {
     align-self: flex-end;
 
   }
@@ -46,7 +46,7 @@
   width: 100%;
   }
 
-  &--active{
+  &--active {
 
     .modal__container {
       opacity: 1;
