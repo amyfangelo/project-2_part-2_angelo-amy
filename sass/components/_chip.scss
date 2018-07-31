@@ -11,10 +11,17 @@
     &__avatar {
        width: $spacer-xxl;
        height: $spacer-xxl;
-       font-size: 1.5rem;
        background-color: $pinkgrey;
+       border: 4px double $pink;
        border-radius: 50%;
        text-align: center;
+       margin-top: $spacer-m;
+
+       &--paragraph {
+         text-align: center;
+         padding-top: $spacer-m;
+         font-size: 1.5rem;
+       }
       }
 
     &__text-container {

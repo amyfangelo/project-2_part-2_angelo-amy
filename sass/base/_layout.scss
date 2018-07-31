@@ -171,14 +171,13 @@ body {
   }
 
     &--container {
+
         @include media($xlarge) {
           display: flex;
           justify-content: center;
           margin: $spacer-xlg $reset-0;
-
         }
-
-    }
+      }
 
   .border-bottom {
     border-bottom: 1.5px solid $pink;
@@ -257,6 +256,7 @@ body {
       border:1px solid $darkgreen;
       padding: $spacer-xs;
       margin: $spacer-s;
+      border: 4px double $darkgreen;
 
       @include media($large) {
         width: $spacer-xlg;
@@ -269,8 +269,10 @@ body {
         height:$spacer-lg;
         background-color: $darkgreen;
         border-radius: 50%;
+         border: 4px double $pink;
         padding: $spacer-xs;
         margin: $spacer-s;
+
 
         @include media($large) {
           width: $spacer-xlg;

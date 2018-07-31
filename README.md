@@ -27,6 +27,8 @@
 `This resource showed me how to implement css grid.`
 [flexbox] (https://flexbox.help/)
 `I learned how to properly code flexbox with the help of this resource`
+[circle rating] (https://www.w3schools.com/howto/howto_css_circles.asp)
+`W3 Schools showed me exactly how to implement circle ratings on my slider`
 
 
 #### Deductions
