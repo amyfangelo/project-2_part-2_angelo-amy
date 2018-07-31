@@ -2,35 +2,28 @@
 // ========================================
 
 .chip {
-  display: flex;
-  align-items: center;
-  background-color: $avatargrey;
-  max-width:190px;
-  padding:$spacer-s;
-  border-radius:22px;
-
+   display: flex;
+   flex-direction: column;
+   // align-items: center;
+  // max-width:100px;
+   padding:$spacer-m;
 
     &__avatar {
-      width: 50px;
-      height: 50px;
-      background-color: $brown;
-      color: $offwhite;
-      border-radius: 50%;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 8%;
-    }
+       width: $spacer-xxl;
+       height: $spacer-xxl;
+       font-size: 1.5rem;
+       background-color: $pinkgrey;
+       border-radius: 50%;
+       text-align: center;
+      }
 
     &__text-container {
-      display: inline-flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
+       display: inline-flex;
+       flex-direction: column;
+     }
 
     &__text--description {
-      font-family:'lora';
-      font-size:.7rem;
+      font-family:$secondary-font;
+      font-size: .9rem;
     }
-
 }
