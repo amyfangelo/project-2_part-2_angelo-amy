@@ -2,12 +2,11 @@
   // position: relative;
   width: 100%;
 
-
   &__container {
     background-color: $offwhite;
     border: $greengrey $spacer-xs solid;
     padding: $spacer-m;
-    display: flex;
+    display: none;
     flex-direction: column;
     border-top: $darkgreen 10px solid;
     border-bottom: $darkgreen 10px solid;
@@ -15,19 +14,29 @@
     padding: $spacer-lg;
     visibility: hidden;
     opacity: 0;
-}
-      &__figure--logo {
-        width: 100%;
-        max-width: 220px;
-      }
+    position: absolute;
+    width: 450px;
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 9999;
+    box-shadow: 0 0 115px 0 rgba(0,0,0,.5);
+  }
 
-      h4 {
-        padding: $spacer-m;
-        color: $brown;
-      }
+  &__figure--logo {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  h4 {
+    padding: $spacer-m;
+    color: $brown;
+  }
 
   &__close {
     align-self: flex-end;
+    float: right;
 
   }
 
@@ -48,9 +57,10 @@
 
   &--active {
 
-    .modal__container {
+    //.modal__container {
       opacity: 1;
       visibility: visible;
-    }
+      display: block;
+    //}
   }
 }

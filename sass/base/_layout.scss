@@ -59,7 +59,7 @@ body {
           @include media($large) {
             padding: $spacer-xs $spacer-s $spacer-xs $spacer-s;
             font-size: 1.5rem;
-            border: $pink 1px dotted;
+            border: $pink 4px double;
             transition-duration: 1s;
           }
         }
