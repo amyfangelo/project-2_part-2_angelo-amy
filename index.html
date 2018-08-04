@@ -140,19 +140,19 @@
       <div class="section__contact__container">
         <div class="section__contact--form-element">
           <label for= name>name</label>
-            <input type="text" name="name" id="name" placeholder="name"/>
+            <input type="text" name="name" id="name" placeholder="name" class="input" required/>
         </div>
         <div class="section__contact--form-element">
           <label for= email>email</label>
-            <input type="text" name="email" id="email" placeholder="email"/>
+            <input type="text" name="email" id="email" placeholder="email" class="input" required/>
         </div>
         <div class="section__contact--form-element">
           <label for= mobile>mobile</label>
-            <input type="text" name="cell" id="mobile" placeholder="mobile"/>
+            <input type="text" name="cell" id="mobile" placeholder="mobile" class="input" required/>
         </div>
         <div class="section__contact--form-element">
           <label for="state">state</label>
-          <select class="section__contact--form-element--select">
+          <select class="section__contact--form-element--select" class="input" required>
               <option value="FL">Florida</option>
               <option value="GA">Georgia</option>
               <option value="CA">California</option>
@@ -161,17 +161,17 @@
         </div>
         <div class="section__contact--form-element">
           <label for= textarea>Message</label>
-          <textarea>message</textarea>
+          <textarea class="input">message</textarea>
         </div>
       </div>
       <div class="section__contact--form-element--actions">
         <button class="button--secondarypink" value="reset" type="reset" id="reset">
           <p>CANCEL</p>
         </button>
-        <button class="button--primarypink"/>
+      <!--  <button class="button--primarypink"/>
           <p>SUBMIT</p>
-        </button>
-        <button class="button--disabled"/>
+        </button>-->
+        <button class="button--disabled" value="submit" type="submit" id="submit" disabled="disabled"/>
         <p>SUBMIT</p>
       </div>
     </section>
@@ -195,6 +195,7 @@
      <script src="js/modal.js"></script>
      <script src="js/3.3.1.js"></script>
      <script src="js/smoothscroll.js"></script>
+     <script src="js/formsubmit.js"></script>
 
 
 

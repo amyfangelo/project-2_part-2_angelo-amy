@@ -42,9 +42,5 @@
   &--disabled {
     @include disabledbutton ($offwhite, $pinkgrey, $pinkgrey);
 
-    &:hover {
-        @include disabledbutton ($pinkgrey, $pinkgrey, $offwhite);
-
-    }
   }
 }
