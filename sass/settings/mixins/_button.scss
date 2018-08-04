@@ -25,3 +25,18 @@
   outline: none;
   cursor: pointer;
 }
+
+@mixin disabledbutton ($background-value, $border-value, $color-value) {
+  //width:20%;
+  background-color: $background-value;
+  border-color: $border-value;
+  border-style: solid;
+  color: $color-value;
+  border-radius: 5px;
+  border-width:.5px;
+  padding: $spacer-s $spacer-m;
+  display: inline-block;
+  margin: 10px;
+  outline: none;
+  cursor: pointer;
+}

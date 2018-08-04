@@ -40,6 +40,11 @@
   }
 
   &--disabled {
-    @include ghostbutton ($offwhite, $pinkgrey, $pinkgrey);
+    @include disabledbutton ($offwhite, $pinkgrey, $pinkgrey);
+
+    &:hover {
+        @include disabledbutton ($pinkgrey, $pinkgrey, $offwhite);
+
+    }
   }
 }
