@@ -29,13 +29,16 @@
 `I learned how to properly code flexbox with the help of this resource`
 [circle rating] (https://www.w3schools.com/howto/howto_css_circles.asp)
 `W3 Schools showed me exactly how to implement circle ratings on my slider`
-
+[javascript slider] (https://www.w3schools.com/howto/howto_js_slideshow.asp)
+`Learned how to implement slider into my about section with this helpful resource`
+[modal positioning] (https://css-tricks.com/considerations-styling-modal/)
+`This resource explained how to position my modal on the webpage`
 
 #### Deductions
 `I reviewed the list of deductions for this project and in the syllabus.`
 
 
 #### Comments
-`This is a basic first draft layout of my site. It is not yet responsive.`
+
 
 ---
