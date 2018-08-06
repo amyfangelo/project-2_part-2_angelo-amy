@@ -85,54 +85,78 @@
     </section>
     </section>
 
-    <article class="article__about--slider">
-      <div class="chip background--lightgreen">
-        <div class="chip__avatar">
-          <p class= "chip__avatar--paragraph">AA</p>
-        </div>
-        <div class= "chip__text-container">
-          <div class="chip__text--title">
-            <p>Amy A.</p>
-          </div>
-          <div class="chip__text--description">
-            <h6>Ponte Vedra Beach, FL</h6>
-            <div class="rate__container">
-              <span class="rate__content"></span>
-              <span class="rate__content"></span>
-              <span class="rate__content"></span>
-              <span class="rate__content"></span>
-              <span class="rate__content"></span>
-              <h6 class="rate__content--date">4/29/18</h6>
-            </div>
-            <h4 class="bold">Excellent service</h4>
-            <p>I only buy vintage clothes and I am on the road often. This app puts me in contact with
-               the best vintage stores in whatever city I travel through. </p>
-            </div>
-  <div class="article__about--slider">
-    <div class="chip__avatar">
-      <p class="chip__avatar--paragraph">MJ</p>
-    </div>
-    <div class= "chip__text-container">
-      <div class="chip__text--title">
-        <p>Michelle J.</p>
-      </div>
-      <div class="chip__text--description">
-        <h6>St. Louis, MO</h6>
-        <div class="rate__container">
-          <span class="rate__content"></span>
-          <span class="rate__content"></span>
-          <span class="rate__content"></span>
-          <span class="rate__content"></span>
-          <span class="rate__content--empty"></span>
-          <h6 class="rate__content--date">1/1/18</h6>
-        </div>
-        </div>
-        <h4>Innovative approach to vintage market</h4>
-        <p>I like the community aspect of this app. The biggest
-           perk is having a platform where vintage veterans share
-           their accumulated expertise. </p>
-  </article>
 
+    <section class="section__about--slider">
+      <div class="slideshow-container chip background--lightgreen">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <div class="chip__avatar">
+    <p class= "chip__avatar--paragraph">AA</p>
+  </div>
+  <div class= "chip__text-container">
+    <div class="chip__text--title">
+      <p>Amy A.</p>
+    </div>
+    <div class="chip__text--description">
+      <h6>Ponte Vedra Beach, FL</h6>
+      <div class="rate__container">
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <h6 class="rate__content--date">4/29/18</h6>
+      </div>
+      <h4 class="bold">Excellent service</h4>
+      <p>I only buy vintage clothes and I am on the road often. This app puts me in contact with
+         the best vintage stores in whatever city I travel through. </p>
+      </div>
+    </div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <div class="chip__avatar">
+    <p class= "chip__avatar--paragraph">MJ</p>
+  </div>
+  <div class= "chip__text-container">
+    <div class="chip__text--title">
+      <p>Michelle J.</p>
+    </div>
+    <div class="chip__text--description">
+      <h6>Athens, GA</h6>
+      <div class="rate__container">
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <span class="rate__content"></span>
+        <h6 class="rate__content--date">1/1/18</h6>
+      </div>
+      <h4 class="bold">Innovative approach to vintage market</h4>
+       <p>I like the community aspect of this app. The biggest
+            perk is having a platform where vintage veterans share
+            their accumulated expertise. </p>
+      </div>
+    </div>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+</div>
+
+
+
+  </section>
 
 
     <section class="section__contact background--offwhite" id="contact">
@@ -168,9 +192,6 @@
         <button class="button--secondarypink" value="reset" type="reset" id="reset">
           <p>CANCEL</p>
         </button>
-      <!--  <button class="button--primarypink"/>
-          <p>SUBMIT</p>
-        </button>-->
         <button class="button--disabled" value="submit" type="submit" id="submit" disabled="disabled"/>
         <p>SUBMIT</p>
       </div>
@@ -196,11 +217,6 @@
      <script src="js/3.3.1.js"></script>
      <script src="js/smoothscroll.js"></script>
      <script src="js/formsubmit.js"></script>
-
-
-
-
-
-     <script type="text/js" src="js/slick.min.js"></script>
+     <script src="js/slider.js"></script>
   </body>
 </html>
