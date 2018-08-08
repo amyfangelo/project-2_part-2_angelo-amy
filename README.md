@@ -7,7 +7,7 @@
 [Website Link](http://amyfangelo.com/amyfrancesangelo/project-2_part-2_angelo-amyfrances/)
 
 #### Link to W3C's Validator
-[W3C Validator Link](https://validator.w3.org/)
+[W3C Validator Link](https://validator.w3.org/nu/?doc=http%3A%2F%2Famyfangelo.com%2Famyfrancesangelo%2Fproject-2_part-2_angelo-amyfrances%2F)
 
 #### Link to HTML5 Outliner
 [HTML5 Outliner](https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Famyfangelo.com%2Famyfrancesangelo%2Fproject-2_part-2_angelo-amyfrances%2F)
