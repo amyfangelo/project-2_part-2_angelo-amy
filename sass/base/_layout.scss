@@ -233,7 +233,7 @@ justify-content: center;
 }
 
     /* Next & previous buttons */
-    .prev, .next {
+    .section__slider--prev, .section__slider--next {
       cursor: pointer;
       position: absolute;
       top: 50%;
@@ -251,28 +251,17 @@ justify-content: center;
     }
 
     /* Position the "next button" to the right */
-    .next {
+    .section__slider--next {
       right: 0;
       border-radius: $spacer-xs 0 0 $spacer-xs;
     }
 
     /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
+    .section__slider--prev:hover, .section__slider--next:hover {
       background-color: $darkgreen;
     }
-
-    /* Caption text */
-    .text {
-      color: $offwhite;
-      padding: $spacer-xs;
-      position: absolute;
-      bottom: $spacer-xs;
-      width: 100%;
-      text-align: center;
-    }
-
-    /* Number text (1/3 etc) */
-    .numbertext {
+    /* Number text (1/2 etc) */
+    .section__slider--number {
       color: $offwhite;
       padding: $spacer-xs;
       position: absolute;
@@ -280,7 +269,7 @@ justify-content: center;
     }
 
     /* The dots/bullets/indicators */
-    .dot {
+    .section__slider--dots {
       cursor: pointer;
       height: $spacer-m;
       width: $spacer-m;
@@ -291,7 +280,7 @@ justify-content: center;
       transition: background-color 0.6s ease;
     }
 
-    .active, .dot:hover {
+    .active, .section__slider--dot:hover {
       background-color: $greengrey;
     }
 
