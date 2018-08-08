@@ -15,7 +15,6 @@ body {
     width: 250px;
     margin: $spacer-m auto;
 
-
     @include media($small) {
       width: 300px;
     }
@@ -79,11 +78,9 @@ body {
   position: relative;
   background-color:$pink;
 
-
   @include media($small) {
     height: 600px;
   }
-
   @include media($medium) {
     height: 700px;
   }
@@ -125,10 +122,6 @@ body {
       top: $spacer-lg;
       max-width: 810px;
     }
-    // @include media($medium) {
-    //   float: right;
-    //   max-width: 550px;
-    // }
   }
 
   &__section {
@@ -160,7 +153,6 @@ body {
   }
 }
 .section__about {
-
   margin: $spacer-lg $reset-0;
   padding: $spacer-lg;
 
@@ -223,16 +215,14 @@ body {
       text-align: center;
 
     }
-.chip__avatar {
-margin: auto;
-text-align: center;
-justify-content: center;
-}
-.rate__container {
-  justify-content: center;
-}
-
-    /* Next & previous buttons */
+    .chip__avatar {
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+    }
+    .rate__container {
+      justify-content: center;
+  }
     .section__slider--prev, .section__slider--next {
       cursor: pointer;
       position: absolute;
@@ -249,26 +239,25 @@ justify-content: center;
     .bold {
       font-weight: bold;
     }
-
-    /* Position the "next button" to the right */
     .section__slider--next {
       right: 0;
       border-radius: $spacer-xs 0 0 $spacer-xs;
     }
 
-    /* On hover, add a black background color with a little bit see-through */
     .section__slider--prev:hover, .section__slider--next:hover {
       background-color: $darkgreen;
     }
-    /* Number text (1/2 etc) */
+
     .section__slider--number {
       color: $offwhite;
       padding: $spacer-xs;
       position: absolute;
       top: 0;
     }
+    .section__slider--dotdiv {
+      text-align: center;
+    }
 
-    /* The dots/bullets/indicators */
     .section__slider--dots {
       cursor: pointer;
       height: $spacer-m;
@@ -282,9 +271,9 @@ justify-content: center;
 
     .active, .section__slider--dot:hover {
       background-color: $greengrey;
+      text-align: center;
     }
 
-    /* Fading animation */
     .fade {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 1.5s;
@@ -301,7 +290,6 @@ justify-content: center;
       from {opacity: .4}
       to {opacity: 1}
     }
-
   }
 }
 
@@ -369,11 +357,10 @@ justify-content: center;
           height:$spacer-xlg;
         }
       }
-h5 {
-padding-bottom: $spacer-xs
-}
-
-}
+      h5 {
+        padding-bottom: $spacer-xs
+      }
+    }
 
 .flex-container {
   width: 100%;

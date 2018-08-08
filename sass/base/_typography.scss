@@ -4,44 +4,39 @@
 h1, h2, h3, h4, h5, h6, {
   color: $darkgreen;
   font-family: 'lora';
-
 }
+
 a {
   color: $darkgreen;
 }
+
 h1 {
   font-size: 2rem;
-
-
 }
 
 h2 {
   font-size: 1.75rem;
-
 }
 
 h3 {
     font-size: 1.5rem;
-
 }
 
 h4 {
   font-size: 1.3rem;
-
 }
 
 h5 {
   font-size: 1rem;
-
 }
 
 h6 {
   font-size: .88rem;
-
 }
 
 p {
   font-size: 1.1rem;
+  font-family: $primary-font;
 
   @include media($medium) {
     font-size: 1.4rem;
@@ -52,15 +47,12 @@ a {
   font-size: 1rem;
   text-decoration: none;
 
-
     @include media ($large) {
     font-size: 1.5rem;
 }
 
-
   &:hover {
     font-size: 1rem;
     color: $offwhite;
-
   }
 }
