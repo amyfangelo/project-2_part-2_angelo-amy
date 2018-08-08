@@ -4,13 +4,13 @@
 [Github link here](https://github.com/amyfangelo/project-2_part-2_angelo-amy)
 
 #### Link to website
-[Website Link](www.thisisyourwebsite.com)
+[Website Link](http://amyfangelo.com/amyfrancesangelo/project-2_part-2_angelo-amyfrances/)
 
 #### Link to W3C's Validator
 [W3C Validator Link](https://validator.w3.org/)
 
 #### Link to HTML5 Outliner
-[HTML5 Outliner](https://gsnedders.html5.org/outliner/)
+[HTML5 Outliner](https://gsnedders.html5.org/outliner/process.py?url=http%3A%2F%2Famyfangelo.com%2Famyfrancesangelo%2Fproject-2_part-2_angelo-amyfrances%2F)
 
 #### Instructions on how to view
 1. `git clone` the repository to view it locally.
@@ -33,7 +33,6 @@
 
 ##### Custom jQuery
 [Hover jQuery](https://www.w3schools.com/jquery/tryit.asp?filename=tryjquery_event_hover)`The custom jQuery can be found when hovering over my h3 in the about section. Additionally, a jQuery hover can be seen on my social media icons in the footer`
-
 
 ##### Custom javaScript
 [Javascript slider](https://www.w3schools.com/howto/howto_js_slideshow.asp)
