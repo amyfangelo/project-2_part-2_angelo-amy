@@ -161,9 +161,7 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-
     &--container {
-
         @include media($xlarge) {
           display: flex;
           justify-content: center;
@@ -185,8 +183,8 @@ body {
     width:100%;
     margin: auto;
     padding: $spacer-lg 0;
-
-  }
+    cursor: pointer;
+}
 
   .center {
     padding: $spacer-m 0;
@@ -215,13 +213,11 @@ body {
   }
 
   .section__slider {
-    &--chip__avatar {
-      margin: auto;
-      text-align: center;
-      justify-content: center;
-    }
 
-    &--prev, &--next {
+
+
+    &--prev {
+      left: 0;
       cursor: pointer;
       position: absolute;
       top: 50%;
@@ -234,19 +230,19 @@ body {
       border-radius: 0 3px 3px 0;
     }
 
-    &--text {
-      @include media($medium) {
-        max-width: 550px;
-      margin: auto;
-      }
-      @include media($large) {
-        max-width: 590px;
-      margin: auto;
-      }
-    }
     &--next {
       right: 0;
       border-radius: $spacer-xs 0 0 $spacer-xs;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: $spacer-m;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
     }
 
     &--prev:hover, &--next:hover {
@@ -259,7 +255,6 @@ body {
       position: absolute;
       top: 0;
     }
-
     &--dotdiv {
       text-align: center;
     }
@@ -296,6 +291,24 @@ body {
       from {opacity: .4}
       to {opacity: 1}
     }
+
+    &--chip__avatar {
+      margin: auto;
+      text-align: center;
+      justify-content: center;
+    }
+
+    &--text {
+      @include media($medium) {
+        max-width: 550px;
+      margin: auto;
+      }
+      @include media($large) {
+        max-width: 590px;
+      margin: auto;
+      }
+    }
+
     .rate__container {
       justify-content: center;
     }
@@ -305,8 +318,6 @@ body {
   }
   }
 }
-
-
 .section__contact {
   h2 {
     text-align: center;
