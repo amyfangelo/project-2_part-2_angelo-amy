@@ -4,12 +4,8 @@
     <title>Vintage Star</title>
     <link href="css/main.css" rel="stylesheet">
     <link rel="icon" href="img/vintagestarfavicon.png" type="image/png">
-<!-- // Add the new slick-theme.css if you want the default styling
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
-
   </head>
   <body>
-
     <header class="header" id="home">
       <nav class= "header__navigation">
         <ul>
@@ -23,7 +19,7 @@
           <button class="button--primarygreen modal__trigger-btn"><p>SAY HELLO</p></button>
           <div class="modal" aria-hidden="true">
             <div class="modal__container">
-                <img src="img/icon-close.svg" alt="close" class="modal__close"/>
+              <img src="img/icon-close.svg" alt="close" class="modal__close"/>
               <header class="modal__header">
                 <img src="img/vintagestarlogo.png" class="modal__figure--logo" alt="Vintage Star" title="Vintage Star"/>
                 <h4>Discover America's best vintage stores!</h4>
@@ -51,34 +47,32 @@
           <h1>REDEFINING THE ONLINE VINTAGE MARKETPLACE</h1>
           <p>Connecting a community dedicated to discovering + supporting local vintage shops across the USA.</p>
         </section>
-          <section class="main__section--button">
+        <section class="main__section--button">
           <div class="button--primarygreen">
             <p>SIGN UP</p>
           </div>
-     </section>
+        </section>
         <img src="img/laptop.png" class="main__figure--image"/>
     </section>
     </main>
     <section class="section__about" id="about">
       <h1> VINTAGE STAR IS HERE TO HELP YOU:</h1>
       <div class="section__about--container">
-        <div class="section__about--information">
-          <h3 class="border-bottom">FIND.</h3>
-          <p class="center">Your favorite vintage stores. Vintage Star is your go-to vintage store locator.</p>
-        </div>
-        <div class="section__about--information">
-          <h3 class="border-bottom"> RATE.</h3>
-          <p class="center">Review your favorite local vintage shops + discover other vintage shops in your area or across the USA</p>
-        </div>
-        <div class="section__about--information">
-          <h3 class="border-bottom">SHOP.</h3>
-          <p class="center">Our carefully curated, flash-sale online vintage collection</h3>
-        </div>
+      <div class="section__about--information">
+        <h3 class="border-bottom">FIND.</h3>
+        <p class="center">Your favorite vintage stores. Vintage Star is your go-to vintage store locator.</p>
+      </div>
+      <div class="section__about--information">
+        <h3 class="border-bottom"> RATE.</h3>
+        <p class="center">Review your favorite local vintage shops + discover other vintage shops in your area or across the USA</p>
+      </div>
+      <div class="section__about--information">
+        <h3 class="border-bottom">SHOP.</h3>
+        <p class="center">Our carefully curated, flash-sale online vintage collection</h3>
+      </div>
       </div>
       <div class="section__about--button">
-        <button class="button--primarypink">
-          <p>SIGN UP</p>
-        </button>
+        <button class="button--primarypink"><p>SIGN UP</p></button>
       </div>
     </section>
     </section>
@@ -87,8 +81,8 @@
         <div class="section__slider fade">
           <div class="section__slider--number">1 / 2</div>
           <div class="chip">
-            <div class="chip__avatar">
-              <p class= "chip__avatar--paragraph">AA</p>
+            <div class="section__slider--chip__avatar">
+              <p class= "section__slider--chip__avatar--paragraph">AA</p>
             </div>
             <div class= "chip__text-container">
               <div class="chip__text--title">
@@ -105,7 +99,7 @@
                   <h6 class="rate__content--date">4/29/18</h6>
                 </div>
                 <h4 class="bold">Excellent service</h4>
-                <p class="center">I only buy vintage clothes and I am on the road often. This app puts me in contact with
+                <p class="section__slider--text">I only buy vintage clothes and I am on the road often. This app puts me in contact with
          the best vintage stores in whatever city I travel through.</p>
       </div>
     </div>
@@ -114,8 +108,8 @@
 <div class="section__slider fade">
   <div class="section__slider--number">2 / 2</div>
   <div class="chip">
-  <div class="chip__avatar">
-    <p class= "chip__avatar--paragraph">MJ</p>
+  <div class="section__slider--chip__avatar">
+    <p class= "section__slider--chip__avatar--paragraph">MJ</p>
   </div>
   <div class= "chip__text-container">
     <div class="chip__text--title">
@@ -132,7 +126,7 @@
         <h6 class="rate__content--date">1/1/18</h6>
       </div>
       <h4 class="bold">Innovative approach</h4>
-       <p class="center">I like the community aspect of this app. The biggest
+            <p class="section__slider--text">I like the community aspect of this app. The biggest
             perk is having a platform where vintage veterans share
             their accumulated expertise. </p>
       </div>
@@ -150,6 +144,7 @@
   </section>
     <section class="section__contact background--offwhite" id="contact">
       <h2>contact us</h2>
+    <form action="ajax/contact.php" method="post">
       <div class="section__contact__container">
         <div class="section__contact--form-element">
           <label for= name>name</label>
@@ -184,6 +179,7 @@
         <button class="button--disabled" value="submit" type="submit" id="submit" disabled="disabled"/>
         <p>SUBMIT</p>
       </div>
+    </form>
     </section>
     <footer class="footer">
       <section class="footer__section--buttons">

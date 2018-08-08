@@ -1,11 +1,9 @@
 // Chip Component Stylesheet
 // ========================================
 
-.chip {
+.section__slider--chip {
    display: flex;
    flex-direction: column;
-   // align-items: center;
-  // max-width:100px;
    padding:$spacer-m;
 
     &__avatar {
@@ -31,6 +29,6 @@
 
     &__text--description {
       font-family:$secondary-font;
-      font-size: .9rem;
+      font-size: 1rem;
     }
 }

@@ -199,31 +199,29 @@ body {
       max-width: 350px;
       margin: auto;
     }
-
   }
+
     &--button {
     padding: $spacer-lg 0;
     text-align: center;
   }
 
   &--slider {
-
-    /* Slideshow container */
     .slideshow-container {
       max-width: 1200px;
       position: relative;
       text-align: center;
+      padding: $spacer-m 0 $spacer-m 0;
+  }
 
-    }
-    .chip__avatar {
+  .section__slider {
+    &--chip__avatar {
       margin: auto;
       text-align: center;
       justify-content: center;
     }
-    .rate__container {
-      justify-content: center;
-  }
-    .section__slider--prev, .section__slider--next {
+
+    &--prev, &--next {
       cursor: pointer;
       position: absolute;
       top: 50%;
@@ -236,29 +234,37 @@ body {
       border-radius: 0 3px 3px 0;
     }
 
-    .bold {
-      font-weight: bold;
+    &--text {
+      @include media($medium) {
+        max-width: 550px;
+      margin: auto;
+      }
+      @include media($large) {
+        max-width: 590px;
+      margin: auto;
+      }
     }
-    .section__slider--next {
+    &--next {
       right: 0;
       border-radius: $spacer-xs 0 0 $spacer-xs;
     }
 
-    .section__slider--prev:hover, .section__slider--next:hover {
+    &--prev:hover, &--next:hover {
       background-color: $darkgreen;
     }
 
-    .section__slider--number {
+    &--number {
       color: $offwhite;
       padding: $spacer-xs;
       position: absolute;
       top: 0;
     }
-    .section__slider--dotdiv {
+
+    &--dotdiv {
       text-align: center;
     }
 
-    .section__slider--dots {
+    &--dots {
       cursor: pointer;
       height: $spacer-m;
       width: $spacer-m;
@@ -269,7 +275,7 @@ body {
       transition: background-color 0.6s ease;
     }
 
-    .active, .section__slider--dot:hover {
+    .active, &--dot:hover {
       background-color: $greengrey;
       text-align: center;
     }
@@ -290,8 +296,16 @@ body {
       from {opacity: .4}
       to {opacity: 1}
     }
+    .rate__container {
+      justify-content: center;
+    }
+    .bold {
+    font-weight: bold;
+    }
+  }
   }
 }
+
 
 .section__contact {
   h2 {
