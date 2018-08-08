@@ -103,7 +103,7 @@ body {
     }
 
     &__figure--image{
-    max-width: 300px;
+    max-width: 365px;
 
     @include media($small) {
       max-width: 500px;
