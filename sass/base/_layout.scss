@@ -213,9 +213,6 @@ body {
   }
 
   .section__slider {
-
-
-
     &--prev {
       left: 0;
       cursor: pointer;
@@ -270,24 +267,19 @@ body {
       transition: background-color 0.6s ease;
     }
 
-    .active, &--dot:hover {
-      background-color: $greengrey;
-      text-align: center;
-    }
-
-    .fade {
+    &--fade {
       -webkit-animation-name: fade;
       -webkit-animation-duration: 1.5s;
       animation-name: fade;
       animation-duration: 1.5s;
     }
 
-    @-webkit-keyframes fade {
+      @-webkit-keyframes fade {
       from {opacity: .4}
       to {opacity: 1}
     }
 
-    @keyframes fade {
+      @keyframes fade {
       from {opacity: .4}
       to {opacity: 1}
     }
@@ -309,7 +301,7 @@ body {
       }
     }
 
-    .rate__container {
+    &--rate__container {
       justify-content: center;
     }
     .bold {
